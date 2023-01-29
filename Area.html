@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Area of triangle and Rectanmgle</title> 
+</head> 
+<body> 
+<table> 
+<tr> 
+<td>Enter the height of triangle : </td> 
+<td><input type="text" id="a"></td> 
+</tr> 
+<tr> 
+<td>Enter the base of triangle : </td> 
+<td><input type="text" id="b"></td> 
+</tr> 
+<br> 
+<tr><td><button onclick="Triangle()">Triangle</button></td></tr> 
+</table> 
+<p id="abc"> 
+</p> 
+<table> 
+    <script>
+        function Triangle() 
+        { 
+        var a = parseInt(document.getElementById("a").value) 
+        var b = parseInt(document.getElementById("b").value) 
+        var c = a*b*1/2; 
+        document.getElementById("abc").innerHTML= "The area of triangle is " +c;
+        } 
+    </script>
+<tr> 
+<td>Enter the length of rectangle : </td> 
+<td><input type="text" id="x"></td> 
+</tr> 
+<tr> 
+<td>Enter the breadth of rectangle : </td> 
+<td><input type="text" id="y"></td> 
+</tr> 
+<br> 
+<tr><td><button onclick="rectangle()">Rectangle</button></td></tr> </table> 
+<p id="cba"> 
+</p>
+<script> 
+function rectangle() 
+{ 
+var x = parseInt(document.getElementById("x").value) 
+var y = parseInt(document.getElementById("y").value) 
+var m = x*y; 
+document.getElementById("cba").innerHTML= "The area of Rectangle is " +m; } 
+</script> 
+</body> 
+</html>
